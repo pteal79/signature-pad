@@ -1,0 +1,23 @@
+{
+    "namespace": "SignaturePad",
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "components": [
+        {
+            "type": "signature_pad",
+            "element": "PTeal79\\SignaturePad\\Elements\\SignaturePad",
+            "blade": "PTeal79\\SignaturePad\\Components\\SignaturePad",
+            "android_renderer": "com.pteal79.plugins.signature_pad.SignaturePadRenderer",
+            "ios_renderer": "PTealSignaturePadRenderer",
+            "self_closing": true
+        }
+    ],
+    "android": {
+        "min_version": 26
+    },
+    "ios": {
+        "min_version": 18.2
+    }
+}

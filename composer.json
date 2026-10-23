@@ -1,0 +1,49 @@
+{
+    "name": "pteal79/signature-pad",
+    "description": "Freehand signature pad EDGE element (<native:signature-pad>) for NativePHP Mobile, SwiftUI and Jetpack Compose",
+    "type": "nativephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Teal",
+            "email": "info@middevondigital.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "nativephp/mobile": "^4.6"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0|^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PTeal79\\SignaturePad\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PTeal79\\SignaturePad\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PTeal79\\SignaturePad\\SignaturePadServiceProvider"
+            ]
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
